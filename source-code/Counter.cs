@@ -26,7 +26,7 @@ namespace TxtCounterStream
             op.Operate(this);
             File.WriteAllText(path, $"{Message} {Number.ToString()}");
             Console.WriteLine($"Novo arquivo gerado no caminho {path} em {DateTime.Now}." +
-                $" Resultado esperado: {Message} {Number}");
+                $" Conteúdo: {Message} {Number}");
         }
     }
 }
